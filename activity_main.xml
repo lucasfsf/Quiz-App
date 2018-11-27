@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-  
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      
   <!-- Input name so that I can receive tha person results -->
   <EditText
             android:id="@+id/name_field"
@@ -227,6 +232,7 @@
             android:layout_marginTop="16dp"
             android:onClick="submitResults"
             android:text="FINISH QUIZ" />
-  
+      
+  </LinearLayout>
        
 </ScrollView>
