@@ -1,16 +1,56 @@
-<Linear Layout>
+<!-- Using ScrollView so the screen can show all the questions-->
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
   
-  <Scroll>
-  <Edit text = nome>
-  <Edit text = nascimento>
-  <Edit text = estado>
+  <!-- Input name so that I can receive tha person results -->
+  <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text" />
+  
+  <!-- Input field so that I can have data regarding answers by the persons age-->
+  <EditText
+            android:id="@+id/birth_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday"
+            android:inputType="date" />
+  
+  
+  <!-- Input field so that I can have data regarding answers by the persons country-->
+  <EditText
+            android:id="@+id/country_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:inputType="text" />
+  
+  <!-- First Question and respective possible answers -->
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="What is the capital of norway?"
+            android:textSize="16sp" />
+  
+  
 
-  <Text = Pergunta 1>
     <radiobuttoms... 4opções>
     <buttom para verificar com Toast se errou ou acertou>
+      
+      
   <Text = Pergunta 2>
     <radiobuttoms... 4opções>
      <buttom para verificar com Toast se errou ou acertou>
+       
+       
   <Text = Pergunta 3>
     <radiobuttoms... 4opções>
      <buttom para verificar com Toast se errou ou acertou>
@@ -24,4 +64,6 @@
      <buttom para finalizar e enviar resultado por e-mail>
 
 
-</Linear Layout>
+       
+       
+</ScrollView>
