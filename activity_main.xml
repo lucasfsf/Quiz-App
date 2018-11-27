@@ -31,6 +31,16 @@
             android:hint="Country"
             android:inputType="text" />
   
+ 
+  <!-- Header for the Quiz - GEOGRAPHY QUIZ-->
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="GEOGRAPHY QUIZ"
+            android:textSize="20sp" />
+  
   <!-- First Question and respective possible answers -->
   <TextView
             android:layout_width="wrap_content"
@@ -40,30 +50,183 @@
             android:text="What is the capital of norway?"
             android:textSize="16sp" />
   
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      
+      <RadioButton android:id="@+id/1a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Buenos Aires"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/1b"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Oslo"
+          android:onClick="rightAnswer"/>
+      <RadioButton android:id="@+id/1c"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Washington"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/1d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Estocolmo"
+          android:onClick="wrongAnswer"/>
+    </RadioGroup>
   
-
-    <radiobuttoms... 4opções>
-    <buttom para verificar com Toast se errou ou acertou>
+  <!-- Second Question and respective possible answers -->
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="What is the capital of Nicaragua?"
+            android:textSize="16sp" />
+  
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
       
+      <RadioButton android:id="@+id/2a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Manágua"
+          android:onClick="rightAnswer"/>
+      <RadioButton android:id="@+id/2b"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Brasilia"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/2c"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="San José"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/2d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="San Salvador"
+          android:onClick="wrongAnswer"/>
+    </RadioGroup>
+
+  <!-- Third Question and respective possible answers -->
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="What is the capital of South Korea?"
+            android:textSize="16sp" />
+  
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
       
-  <Text = Pergunta 2>
-    <radiobuttoms... 4opções>
-     <buttom para verificar com Toast se errou ou acertou>
+      <RadioButton android:id="@+id/3a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hong Kong"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/3b"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Daegu"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/3c"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Busan"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/3d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Seul"
+          android:onClick="rightAnswer"/>
+    </RadioGroup>
+    
+  <!-- Fourth Question and respective possible answers -->
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="What is the capital of Japan?"
+            android:textSize="16sp" />
+  
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      
+      <RadioButton android:id="@+id/4a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Kyoto"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/4b"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Tokyo"
+          android:onClick="rightAnswer"/>
+      <RadioButton android:id="@+id/4c"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Osaka"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/4d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Minato"
+          android:onClick="wrongAnswer"/>
+    </RadioGroup>
+  
+  <!-- Fifth Question and respective possible answers -->
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="What is the capital of Butan?"
+            android:textSize="16sp" />
+  
+    <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      
+      <RadioButton android:id="@+id/5a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Punakha"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/5b"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Paro"
+          android:onClick="wrongAnswer"/>
+      <RadioButton android:id="@+id/5c"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Thimphu"
+          android:onClick="rightAnswer"/>
+      <RadioButton android:id="@+id/5d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Puntshol"
+          android:onClick="wrongAnswer"/>
+    </RadioGroup>
        
-       
-  <Text = Pergunta 3>
-    <radiobuttoms... 4opções>
-     <buttom para verificar com Toast se errou ou acertou>
-  <Text = Pergunta 4>
-    <radiobuttoms... 4opções>
-     <buttom para verificar com Toast se errou ou acertou>
-  <Text = Pergunta 5>
-    <radiobuttoms... 4opções>
-     <buttom para verificar com Toast se errou ou acertou>
-     
-     <buttom para finalizar e enviar resultado por e-mail>
-
-
-       
+  <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="submitResults"
+            android:text="FINISH QUIZ" />
+  
        
 </ScrollView>
