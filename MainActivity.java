@@ -16,7 +16,7 @@ public void onRadioButtonClicked(View view) {
             break;
         case R.id.1b:
             if (checked)
-                // Right Answer - Oslo
+                // RIGHT ANSWER - Oslo
             break;
         case R.id.1c:
             if (checked)
@@ -30,7 +30,7 @@ public void onRadioButtonClicked(View view) {
         //Answers for Second Question
         case R.id.2a:
             if (checked)
-                // Right answer - Manágua
+                // RIGHT ANSWER - Manágua
             break;
         case R.id.2b:
             if (checked)
@@ -48,55 +48,55 @@ public void onRadioButtonClicked(View view) {
          //Answers for Third Question
         case R.id.3a:
             if (checked)
-                // Pirates are the best
+                // Wrong Answer - Hong Kong
             break;
         case R.id.3b:
             if (checked)
-                // Ninjas rule
+                // Wrong Answer - Daegu
             break;
         case R.id.3c:
             if (checked)
-                // Pirates are the best
+                // Wrong Answer - Busan
             break;
         case R.id.3d:
             if (checked)
-                // Ninjas rule
+                // RIGHT ANSWER - Seul
             break;
             
         //Answers for Fourth Question
         case R.id.4a:
             if (checked)
-                // Pirates are the best
+                // Wrong Answer - Kyoto
             break;
         case R.id.4b:
             if (checked)
-                // Ninjas rule
+                // RIGHT ANSWER - Tokyo
             break;
         case R.id.4c:
             if (checked)
-                // Pirates are the best
+                // Wrong Answer - Osaka
             break;
         case R.id.4d:
             if (checked)
-                // Ninjas rule
+                // Wrong Answer - Minato
             break;
             
         //Answers for Fifth Question
         case R.id.5a:
             if (checked)
-                // Pirates are the best
+                // Wrong Answer - Punakha
             break;
         case R.id.5b:
             if (checked)
-                // Ninjas rule
+                // Wrong Answer - Paro
             break;
         case R.id.5c:
             if (checked)
-                // Pirates are the best
+                // RIGHT ANSWER - Thimphu
             break;
         case R.id.5d:
             if (checked)
-                // Ninjas rule
+                // Wrong Answer - Puntshol
             break;
             
     }
