@@ -59,22 +59,22 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Buenos Aires"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/1b"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Oslo"
-          android:onClick="rightAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/1c"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Washington"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/1d"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Estocolmo"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
   
   <!-- Second Question and respective possible answers -->
@@ -95,22 +95,22 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Manágua"
-          android:onClick="rightAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/2b"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Brasilia"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/2c"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="San José"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/2d"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="San Salvador"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
 
   <!-- Third Question and respective possible answers -->
@@ -131,22 +131,22 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Hong Kong"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/3b"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Daegu"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/3c"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Busan"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/3d"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Seul"
-          android:onClick="rightAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
     
   <!-- Fourth Question and respective possible answers -->
@@ -167,22 +167,22 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Kyoto"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/4b"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Tokyo"
-          android:onClick="rightAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/4c"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Osaka"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/4d"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Minato"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
   
   <!-- Fifth Question and respective possible answers -->
@@ -203,22 +203,22 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Punakha"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/5b"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Paro"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/5c"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Thimphu"
-          android:onClick="rightAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
       <RadioButton android:id="@+id/5d"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Puntshol"
-          android:onClick="wrongAnswer"/>
+          android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
        
   <Button
