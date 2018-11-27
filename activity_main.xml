@@ -1,0 +1,27 @@
+<Linear Layout>
+  
+  <Scroll>
+  <Edit text = nome>
+  <Edit text = nascimento>
+  <Edit text = estado>
+
+  <Text = Pergunta 1>
+    <radiobuttoms... 4opções>
+    <buttom para verificar com Toast se errou ou acertou>
+  <Text = Pergunta 2>
+    <radiobuttoms... 4opções>
+     <buttom para verificar com Toast se errou ou acertou>
+  <Text = Pergunta 3>
+    <radiobuttoms... 4opções>
+     <buttom para verificar com Toast se errou ou acertou>
+  <Text = Pergunta 4>
+    <radiobuttoms... 4opções>
+     <buttom para verificar com Toast se errou ou acertou>
+  <Text = Pergunta 5>
+    <radiobuttoms... 4opções>
+     <buttom para verificar com Toast se errou ou acertou>
+     
+     <buttom para finalizar e enviar resultado por e-mail>
+
+
+</Linear Layout>
