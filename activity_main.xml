@@ -1,238 +1,197 @@
-<!-- Using ScrollView so the screen can show all the questions-->
-<ScrollView 
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    
-  <LinearLayout
+<!-- Using ScrollView so the screen can show all the questions -->
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-      
-  <!-- Input name so that I can receive tha person results -->
-  <EditText
+        tools:context=".MainActivity"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!-- Input name so that I can receive tha person results -->
+        <EditText
             android:id="@+id/name_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditText"
             android:hint="Name"
             android:inputType="text" />
-  
-  <!-- Input field so that I can have data regarding answers by the persons age-->
-  <EditText
-            android:id="@+id/birth_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Birthday"
-            android:inputType="date" />
-  
-  
-  <!-- Input field so that I can have data regarding answers by the persons country-->
-  <EditText
+
+        <!-- Input field so that I can have data regarding answers by the persons country-->
+        <EditText
             android:id="@+id/country_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditText"
             android:hint="Country"
             android:inputType="text" />
-  
- 
-  <!-- Header for the Quiz - GEOGRAPHY QUIZ-->
-  <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:text="GEOGRAPHY QUIZ"
-            android:textSize="20sp" />
-  
-  <!-- First Question and respective possible answers -->
-  <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:text="What is the capital of norway?"
-            android:textSize="16sp" />
-  
-    <RadioGroup
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical">
-      
-      <RadioButton android:id="@+id/1a"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Buenos Aires"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/1b"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Oslo"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/1c"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Washington"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/1d"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Estocolmo"
-          android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
-  
-  <!-- Second Question and respective possible answers -->
-  <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:text="What is the capital of Nicaragua?"
-            android:textSize="16sp" />
-  
-    <RadioGroup
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical">
-      
-      <RadioButton android:id="@+id/2a"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Manágua"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/2b"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Brasilia"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/2c"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="San José"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/2d"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="San Salvador"
-          android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
 
-  <!-- Third Question and respective possible answers -->
-  <TextView
-            android:layout_width="wrap_content"
+
+
+        <!-- Header for the Quiz - GEOGRAPHY QUIZ-->
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="GEOGRAPHY QUIZ"
+            android:textSize="28sp" />
+
+        <!-- First Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="What is the capital of Norway?"
+             />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/first_question_a"
+                style="@style/options"
+                android:text="Buenos Aires"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/first_question_b"
+                style="@style/options"
+                android:text="Oslo"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/first_question_c"
+                style="@style/options"
+                android:text="Washington"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/first_question_d"
+                style="@style/options"
+                android:text="Estocolmo"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Second Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="What is the capital of Nicaragua?"
+             />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/second_question_a"
+                style="@style/options"
+                android:text="Manágua"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/second_question_b"
+                style="@style/options"
+                android:text="Brasilia"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/second_question_c"
+                style="@style/options"
+                android:text="San José"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/second_question_d"
+                style="@style/options"
+                android:text="San Salvador"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Third Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
             android:text="What is the capital of South Korea?"
-            android:textSize="16sp" />
-  
-    <RadioGroup
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical">
-      
-      <RadioButton android:id="@+id/3a"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Hong Kong"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/3b"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Daegu"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/3c"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Busan"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/3d"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Seul"
-          android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
-    
-  <!-- Fourth Question and respective possible answers -->
-  <TextView
-            android:layout_width="wrap_content"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/third_question_a"
+                style="@style/options"
+                android:text="Hong Kong"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/third_question_b"
+                style="@style/options"
+                android:text="Daegu"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/third_question_c"
+                style="@style/options"
+                android:text="Busan"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/third_question_d"
+                style="@style/options"
+                android:text="Seul"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Fourth Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
             android:text="What is the capital of Japan?"
-            android:textSize="16sp" />
-  
-    <RadioGroup
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical">
-      
-      <RadioButton android:id="@+id/4a"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Kyoto"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/4b"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Tokyo"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/4c"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Osaka"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/4d"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Minato"
-          android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
-  
-  <!-- Fifth Question and respective possible answers -->
-  <TextView
-            android:layout_width="wrap_content"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/fourth_question_a"
+                style="@style/options"
+                android:text="Kyoto"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fourth_question_b"
+                style="@style/options"
+                android:text="Tokyo"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fourth_question_c"
+                style="@style/options"
+                android:text="Osaka"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fourth_question_d"
+                style="@style/options"
+                android:text="Minato"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Fifth Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
             android:text="What is the capital of Butan?"
-            android:textSize="16sp" />
-  
-    <RadioGroup
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical">
-      
-      <RadioButton android:id="@+id/5a"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Punakha"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/5b"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Paro"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/5c"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Thimphu"
-          android:onClick="onRadioButtonClicked"/>
-      <RadioButton android:id="@+id/5d"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Puntshol"
-          android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
-       
-  <Button
-            android:layout_width="wrap_content"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/fifth_question_a"
+                style="@style/options"
+                android:text="Punakha"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fifth_question_b"
+                style="@style/options"
+                android:text="Paro"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fifth_question_c"
+                style="@style/options"
+                android:text="Thimphu"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fifth_question_d"
+                style="@style/options"
+                android:text="Puntshol"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
             android:layout_marginTop="16dp"
             android:onClick="submitResults"
             android:text="FINISH QUIZ" />
-      
-  </LinearLayout>
-       
+
+    </LinearLayout>
 </ScrollView>
