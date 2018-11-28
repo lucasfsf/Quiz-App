@@ -1,146 +1,152 @@
+package com.example.android.quizapp;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.text.Editable;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
-//Global variaple for score keeping
-int finalScore;
+public class MainActivity extends AppCompatActivity {
 
-public void onRadioButtonClicked(View view) {
-    // Is the button now checked?
-    boolean checked = ((RadioButton) view).isChecked();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
 
-    // Check which radio button was clicked
-    switch(view.getId()) {
-        //Answers for First Question
-        case R.id.1a:
+    //Global variaple for score keeping
+    int finalScore;
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            //Answers for First Question
+            case R.id.first_question_a:
             if (checked)
                 // Wrong Answer - Buenos Aires
-            break;
-        case R.id.1b:
+                break;
+            case R.id.first_question_b:
             if (checked)
                 // RIGHT ANSWER - Oslo
                 finalScore += 1;
-            break;
-        case R.id.1c:
+                break;
+            case R.id.first_question_c:
             if (checked)
                 // Wrong Answer - Washington
-            break;
-        case R.id.1d:
-            if (checked)
-                // Wrong Answer - Estocolmo
-            break;
-            
-        //Answers for Second Question
-        case R.id.2a:
+                break;
+            case R.id.first_question_d:
+                if (checked)
+                    // Wrong Answer - Estocolmo
+                    break;
+
+                //Answers for Second Question
+            case R.id.second_question_a:
             if (checked)
                 // RIGHT ANSWER - Manágua
                 finalScore += 1;
-            break;
-        case R.id.2b:
+                break;
+            case R.id.second_question_b:
             if (checked)
                 // Wrong Answer - Brasilia
-            break;
-        case R.id.2c:
+                break;
+            case R.id.second_question_c:
             if (checked)
                 // Wrong Answer - San José
-            break;
-        case R.id.2d:
-            if (checked)
-                // Wrong Answer - San Salvador
-            break;
-            
-         //Answers for Third Question
-        case R.id.3a:
+                break;
+            case R.id.second_question_d:
+                if (checked)
+                    // Wrong Answer - San Salvador
+                    break;
+
+                //Answers for Third Question
+            case R.id.third_question_a:
             if (checked)
                 // Wrong Answer - Hong Kong
-            break;
-        case R.id.3b:
+                break;
+            case R.id.third_question_b:
             if (checked)
                 // Wrong Answer - Daegu
-            break;
-        case R.id.3c:
+                break;
+            case R.id.third_question_c:
             if (checked)
                 // Wrong Answer - Busan
-            break;
-        case R.id.3d:
-            if (checked)
-                // RIGHT ANSWER - Seul
-                finalScore += 1;
-            break;
-            
-        //Answers for Fourth Question
-        case R.id.4a:
+                break;
+            case R.id.third_question_d:
+                if (checked)
+                    // RIGHT ANSWER - Seul
+                    finalScore += 1;
+                break;
+
+            //Answers for Fourth Question
+            case R.id.fourth_question_a:
             if (checked)
                 // Wrong Answer - Kyoto
-            break;
-        case R.id.4b:
+                break;
+            case R.id.fourth_question_b:
             if (checked)
                 // RIGHT ANSWER - Tokyo
                 finalScore += 1;
-            break;
-        case R.id.4c:
+                break;
+            case R.id.fourth_question_c:
             if (checked)
                 // Wrong Answer - Osaka
-            break;
-        case R.id.4d:
-            if (checked)
-                // Wrong Answer - Minato
-            break;
-            
-        //Answers for Fifth Question
-        case R.id.5a:
+                break;
+            case R.id.fourth_question_d:
+                if (checked)
+                    // Wrong Answer - Minato
+                    break;
+
+                //Answers for Fifth Question
+            case R.id.fifth_question_a:
             if (checked)
                 // Wrong Answer - Punakha
-            break;
-        case R.id.5b:
+                break;
+            case R.id.fifth_question_b:
             if (checked)
                 // Wrong Answer - Paro
-            break;
-        case R.id.5c:
+                break;
+            case R.id.fifth_question_c:
             if (checked)
                 // RIGHT ANSWER - Thimphu
                 finalScore += 1;
-            break;
-        case R.id.5d:
-            if (checked)
-                // Wrong Answer - Puntshol
-            break;
-           
-    }
-}
+                break;
+            case R.id.fifth_question_d:
+                if (checked)
+                    // Wrong Answer - Puntshol
+                    break;
 
- public void submitResults(View view) {
-        //Toast message to end Quizz
-        Toast toast = Toast.makeText(getApplicationContext(),
-        "You have finished the Quiz, sending results...",
-        Toast.LENGTH_SHORT);
-        toast.show();
-     
+        }
+    }
+
+    public void submitResults(View view) {
+
         // Get user's name
         EditText nameField = (EditText) findViewById(R.id.name_field);
         Editable nameEditable = nameField.getText();
         String name = nameEditable.toString();
-     
-        // Get user's Birthdate
-        EditText birtField = (EditText) findViewById(R.id.birth_field);
-        Editable birthEditable = birtField.getText();
-        String birth = birthEditable.toString();
-     
-         // Get user's Country
+
+
+        // Get user's Country
         EditText countryField = (EditText) findViewById(R.id.country_field);
         Editable countryEditable = countryField.getText();
         String country = countryEditable.toString();
 
-        // Finalscore message
-        String finalScoreMessage = name + "from " + country + ", who was born in" + country + "has scored" + finalScore;
+        // Final score message
+        String finalScoreMessage = name + " from " + country +  " has scored " + finalScore +  "points!";
 
-        // Use an intent to launch an email app.
-        // Send the order summary in the email body.
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT,
-                getString(R.string.order_summary_email_subject, name, birth, country, ));
-        intent.putExtra(Intent.EXTRA_TEXT, finalScoreMessage);
+        //Toast message to end Quiz
+        Toast toast = Toast.makeText(getApplicationContext(),
+                finalScoreMessage,
+                Toast.LENGTH_SHORT);
+        toast.show();
 
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
+        finalScore = 0;
+    }
 }
