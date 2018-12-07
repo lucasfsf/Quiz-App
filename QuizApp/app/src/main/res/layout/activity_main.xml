@@ -1,0 +1,245 @@
+<!-- Using ScrollView so the screen can show all the questions -->
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Input name so that I can receive tha person results -->
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/EditText"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textAllCaps="true"/>
+
+        <!-- Input field so that I can have data regarding answers by the persons country-->
+        <EditText
+            android:id="@+id/country_field"
+            style="@style/EditText"
+            android:hint="@string/country"
+            android:inputType="text"
+            android:textAllCaps="true"/>
+
+
+
+        <!-- Header for the Quiz - GEOGRAPHY QUIZ-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/top_padding_header"
+            android:paddingBottom="@dimen/bottom_padding_header"
+            android:text="@string/geography_quiz"
+            android:textSize="28sp" />
+
+        <!-- First Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="@string/first_question"
+             />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/first_question_a"
+                style="@style/options"
+                android:text="@string/first_question_answer_a"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/first_question_b"
+                style="@style/options"
+                android:text="@string/first_question_answer_b"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/first_question_c"
+                style="@style/options"
+                android:text="@string/first_question_answer_c"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/first_question_d"
+                style="@style/options"
+                android:text="@string/first_question_answer_d"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Second Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="@string/second_question"
+             />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/second_question_a"
+                style="@style/options"
+                android:text="@string/second_question_answer_a"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/second_question_b"
+                style="@style/options"
+                android:text="@string/second_question_answer_b"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/second_question_c"
+                style="@style/options"
+                android:text="@string/second_question_answer_c"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/second_question_d"
+                style="@style/options"
+                android:text="@string/second_question_answer_d"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Third Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="@string/third_question"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/third_question_a"
+                style="@style/options"
+                android:text="@string/third_question_answer_a"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/third_question_b"
+                style="@style/options"
+                android:text="@string/third_question_answer_b"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/third_question_c"
+                style="@style/options"
+                android:text="@string/third_question_answer_c"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/third_question_d"
+                style="@style/options"
+                android:text="@string/third_question_answer_d"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Fourth Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="@string/fourth_question"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/fourth_question_a"
+                style="@style/options"
+                android:text="@string/fourth_question_answer_a"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fourth_question_b"
+                style="@style/options"
+                android:text="@string/fourth_question_answer_b"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fourth_question_c"
+                style="@style/options"
+                android:text="@string/fourth_question_answer_c"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fourth_question_d"
+                style="@style/options"
+                android:text="@string/fourth_question_answer_d"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Fifth Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="@string/fifth_question"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/fifth_question_a"
+                style="@style/options"
+                android:text="@string/fifth_question_answer_a"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fifth_question_b"
+                style="@style/options"
+                android:text="@string/fifth_question_answer_b"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fifth_question_c"
+                style="@style/options"
+                android:text="@string/fifth_question_answer_c"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/fifth_question_d"
+                style="@style/options"
+                android:text="@string/fifth_question_answer_d"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <!-- Sifth Question and respective possible answers -->
+        <TextView
+            style="@style/questions"
+            android:text="@string/sixth_question"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxA"
+            style="@style/options"
+            android:text="@string/sixth_question_answer_a" />
+
+        <CheckBox
+            android:id="@+id/checkBoxB"
+            style="@style/options"
+            android:text="@string/sixth_question_answer_b" />
+
+        <CheckBox
+            android:id="@+id/checkBoxC"
+            style="@style/options"
+            android:text="@string/sixth_question_answer_c" />
+
+        <CheckBox
+            android:id="@+id/checkBoxD"
+            style="@style/options"
+            android:text="@string/sixth_question_answer_d" />
+
+        <CheckBox
+            android:id="@+id/checkBoxE"
+            style="@style/options"
+            android:text="@string/sixth_question_answer_e" />
+
+        <!-- Seventh Question-->
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/seventh_question"
+            />
+
+        <EditText
+            android:id="@+id/question_answer"
+            style="@style/EditText"
+            android:hint="@string/quantity"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="16dp"
+            android:onClick="submitResults"
+            android:text="@string/finish_quiz" />
+
+
+
+    </LinearLayout>
+</ScrollView>
